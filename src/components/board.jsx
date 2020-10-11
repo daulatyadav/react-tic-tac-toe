@@ -129,18 +129,7 @@ export class Board extends React.Component {
                         </div>
                     </div>
 
-                    <div className="board-history">
-                        <h2 className="board-heading">Moves history:</h2>
-
-                        {/* List with history of moves */}
-                        <ul className="board-historyList">
-                            {this.state.history.length === 0 && <span>No moves to show.</span>}
-
-                            {this.state.history.length !== 0 && this.state.history.map((move, index) => {
-                                return <li key={index}>Move {index + 1}: <strong>{move}</strong></li>
-                            })}
-                        </ul>
-                    </div>
+                   
 
                     {/* Button to start new game */}
                     {winner && <div className="board-footer">
